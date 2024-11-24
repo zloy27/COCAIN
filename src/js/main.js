@@ -1,3 +1,2 @@
-import '../css/style.css'
-import{fol} from './counter'
-console.log(fol);
+import '../css/main.scss';
+console.log('fuck off');
