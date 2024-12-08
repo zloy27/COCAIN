@@ -1,2 +1,2 @@
-import '../css/main.scss';
+import '../assets/css/main.scss';
 console.log('fuck off');

@@ -16,13 +16,17 @@
     "globals": "^15.12.0",
     "prettier": "^3.3.3",
     "sass-embedded": "^1.81.0",
+    "sharp": "^0.33.5",
     "stylelint": "^16.10.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4",
-    "vite": "^5.4.10"
+    "svgo": "^3.3.2",
+    "vite": "^5.4.10",
+    "vite-plugin-image-optimizer": "^1.1.8"
   },
   "dependencies": {
     "scss": "^0.2.4",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-minify": "^2.1.0"
   }
 }
