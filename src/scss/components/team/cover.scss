@@ -1,0 +1,119 @@
+.cover {
+    &__shell {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__top {
+        padding: 105px 0;
+        @include flex-column-space-between;
+        height: 100%;
+        max-height: 796px;
+        height: 90vh;
+        &--title {
+            color: var(--neutral-color-100);
+            font-size: 72px;
+            line-height: 120%;
+            font-weight: 700;
+            max-width: 959px;
+        }
+        &--info {
+            display: flex;
+            flex-direction: row;
+            max-width: 838px;
+            height: 100%;
+            &-shell {
+                @include flex-row-space-between;
+                align-items: center;
+                max-width: 838px;
+            }
+            &-line {
+                max-width: 76px;
+                width: 100%;
+                height: 1px;
+                border: solid 1px var(--neutral-color-140);
+            }
+            &-text {
+                color: var(--neutral-color-100);
+                max-width: 738px;
+                font-size: 32px;
+                line-height: 133%;
+                font-weight: 600;
+            }
+        }
+    }
+    &__bottom {
+        max-height: 634px;
+    }
+    &__swiper {
+        max-height: 634px;
+        max-width: 1534px;
+        &--wrapper {
+            gap: 32px;
+            right: 0;
+        }
+        &--slide{
+            width: 502px;
+        }
+    }
+}
+.first__slide {
+    max-width: 502px;
+    max-height: 629px;
+    &--img img {
+        height: auto;
+        width: auto;
+        max-width: 502px;
+    }
+}
+.second__slide {
+    max-width: 502px;
+    max-height: 674px;
+    display: flex;
+    @include flex-column-space-between;
+    gap: 24px;
+    &--img {
+        max-width: 502px;
+        max-height: 370px;
+    }
+    &--info {
+        @include flex-column-space-between;
+        gap: 16px;
+        &-title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 150%;
+            letter-spacing: -0.01em;
+            color: var(--neutral-color-100);
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 178%;
+            color: var(--neutral-color-150);
+        }
+    }
+    &--button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #fff;
+        background-color: var(--neutral-color-100);
+        border-radius: 100px;
+        padding: 16px 32px;
+        max-width: 121px;
+        max-height: 56px;
+        display: flex;
+        align-items: center;
+        &-img{
+            max-height: 24px;
+        }
+    }
+}
+.third__slide{
+    &--img img{
+        max-width: 460px;
+        max-height: 506px;
+    }
+}

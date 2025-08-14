@@ -1,0 +1,207 @@
+.feedback {
+    margin-bottom: 160px;
+    &__shell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 112px;
+        @include small-tablet {
+            gap: 56px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15vw;
+        @include tablet {
+            gap: 10vw;
+        }
+        &-title {
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 120%;
+            color: var(--neutral-color-100);
+            max-width: 530px;
+            @include mini-desktop {
+                font-size: 44px;
+            }
+            @include tablet {
+                font-size: 32px;
+            }
+            @include small-tablet {
+                font-size: 26px;
+            }
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 500;
+            color: var(--neutral-color-150);
+            max-width: 376px;
+            @include small-tablet {
+                line-height: 24px;
+            }
+            @include mobile {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    &__slider {
+        height: 45vh;
+        width: 73vw;
+        max-width: 898px;
+        max-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
+        // &::before{
+        //     position: absolute;
+        //     top:  -17px;
+        //     left: -122px;
+        //     content: url(../../../assets/icons/tiks.svg)
+        // }
+        @include small-tablet{
+            height: auto;
+        }
+        &-shell {
+            @include flex-row-space-between;
+            align-items: end;
+            position: relative;
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        &-tiks {
+            position: absolute;
+            top: -17px;
+            left: -122px;
+            @include small-desktop {
+                display: none;
+            }
+        }
+    }
+    &__slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        max-width: 1039px;
+        &-stars {
+            max-width: 164px;
+            max-height: 26px;
+            & img {
+                @include small-tablet {
+                    max-height: 20px;
+                }
+            }
+        }
+        &-text {
+            font-size: 40px;
+            line-height: 130%;
+            font-weight: 500;
+            @include tablet {
+                font-size: 32px;
+            }
+            @include small-tablet {
+                font-size: 30px;
+            }
+            @include mobile{
+                font-size: 22px;
+            }
+            @include small-mobile{
+                font-size: 18px;
+            }
+        }
+        &-bottom {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-profile {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            &-img {
+                @include small-tablet {
+                    max-width: 48px;
+                    max-height: 48px;
+                }
+                @include small-mobile{
+                    max-width: 40px;
+                    max-height: 38px;
+                }
+            }
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            &-name {
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 500;
+                color: var(--neutral-color-100);
+                @include small-tablet {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                @include small-mobile{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            &-profession {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 500;
+                color: var(--neutral-color-150);
+                @include small-tablet {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @include small-mobile{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        transform: rotateY(10px);
+    }
+    &__button {
+        & img {
+            height: 50px;
+            width: 60px;
+        }
+        &--left,&--right{
+            padding: 16px 17.53px;
+            border: solid 2px var(--neutral-color-40);
+            border-radius: 100px;
+            @include small-tablet{
+                padding: 10px 11.53px;
+            }
+        }
+        &--right {
+            transform: rotateY(180deg);
+        }
+    }
+    &__button:hover {
+        background-color: var(--neutral-color-100);
+    }
+}
