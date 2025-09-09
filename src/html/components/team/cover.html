@@ -1,10 +1,20 @@
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <section class="cover">
+    <div class="cover__background--round-1">
+        <svg width="792" height="991" viewBox="0 0 792 991" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.13" filter="url(#filter0_f_1_2750)">
+                <circle cx="296.5" cy="495.5" r="275.5" fill="#FA7515" />
+            </g>
+            <defs>
+                <filter id="filter0_f_1_2750" x="-199" y="0" width="991" height="991" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="110" result="effect1_foregroundBlur_1_2750" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
     <div class="container">
         <div class="cover__shell">
             <div class="cover__top">
@@ -21,7 +31,7 @@
                             your website and create online businesses that grow.
                         </div>
                     </div>
-                    <div class="cover__info--sticker">
+                    <div class="cover__top--info-sticker">
                         <img src="/assets/icons/cover__sticker.svg" alt="" />
                     </div>
                 </div>
@@ -35,17 +45,14 @@
                         <div class="swiper-slide cover__swiper--slide">
                             <div class="first__slide">
                                 <div class="first__slide--img">
-                                    <img src="/assets/icons/cover__first-slide.svg" alt=""/>
+                                    <img src="/assets/icons/cover__first-slide.svg" alt="" />
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide cover__swiper--slide">
                             <div class="second__slide">
                                 <div class="second__slide--img">
-                                    <img
-                                        src="/assets/icons/cover__second-slide.svg"
-                                        alt=""
-                                    />
+                                    <img src="/assets/icons/cover__second-slide.svg" alt="" />
                                 </div>
                                 <div class="second__slide--info">
                                     <div class="second__slide--info-title">
@@ -61,11 +68,8 @@
                                 </div>
                                 <button class="second__slide--button">
                                     See Details
-                                    <img
-                                        class="second__slide--button-img"
-                                        src="/assets/icons/cover__arrow-right.svg"
-                                        alt=""
-                                    />
+                                    <img class="second__slide--button-img" src="/assets/icons/cover__arrow-right.svg"
+                                        alt="" />
                                 </button>
                             </div>
                         </div>
@@ -82,8 +86,12 @@
                         </div>
                     </div>
                     <div class="cover__swiper-buttons">
-                        <div class="swiper-button-prev cover__swiper-prev"></div>
-                        <div class="swiper-button-next cover__swiper-next"></div>
+                        <button class="swiper-button-prev cover__swiper-prev">
+                            <img src="./assets/icons/cover__swiper--arrow-prev.svg" alt="">
+                        </button>
+                        <button class="swiper-button-next cover__swiper-next">
+                            <img src="./assets/icons/cover__swiper--arrow.svg" alt="">
+                        </button>
                     </div>
                 </div>
             </div>

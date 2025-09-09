@@ -16,7 +16,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: './src/index.html',
-                team: './src/team.html',
                 pricing: './src/pricing.html',
                 contact: './src/contact.html',
             },

@@ -1,0 +1,330 @@
+.form {
+    margin-top: 160px;
+    margin-bottom: 160px;
+    max-height: 1000px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include tablet {
+        justify-content: center;
+        max-height: none;
+    }
+
+    @include small-tablet {
+        padding: 0 15px;
+        margin: 80px 0;
+    }
+    @include mobile{
+        margin: 60px 0;
+    }
+    @include small-mobile{
+        margin: 40px 0;
+    }
+
+    &__shell {
+        position: relative;
+
+        @include tablet {
+            position: static;
+        }
+    }
+
+    &__img {
+        max-width: 885px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.item {
+    @include flex-column-space-between;
+    padding: 56px 48px;
+    background-color: var(--neutral-color-10);
+    position: absolute;
+    right: 45vw;
+    top: 0;
+    gap: 48px;
+    border: 1px solid #ced1d8;
+    max-width: 608px;
+    max-height: 784px;
+
+    @include big-tablet {
+        right: 41vw;
+    }
+
+    @include small-tablet {
+        position: static;
+        max-width: 512px;
+        max-height: none;
+        padding: 48px 40px;
+    }
+
+    @include mobile {
+        gap: 24px;
+        padding: 40px 32px;
+    }
+
+    @include small-mobile {
+        max-width: 340px;
+        gap: 20px;
+        padding: 32px 24px;
+    }
+
+    &__top {
+        @include flex-column-space-between;
+        gap: 20px;
+        max-height: 94px;
+        width: 512px;
+
+        @include tablet {
+            max-width: 512px;
+            width: auto;
+        }
+
+        @include mobile {
+            gap: 16px;
+        }
+
+        &--title {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 122%;
+            letter-spacing: -0.02em;
+            color: var(--neutral-color-100);
+
+            @include mobile {
+                font-size: 30px;
+            }
+
+            @include small-mobile {
+                font-size: 20px;
+            }
+        }
+
+        &--info {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167%;
+            color: var(--neutral-color-150);
+
+            @include mobile {
+                font-size: 16px;
+            }
+
+            @include small-mobile {
+                font-size: 14px;
+            }
+
+            & span {
+                font-weight: 500;
+                color: #1463ff;
+            }
+        }
+    }
+
+    &__bottom {
+        @include flex-column-space-between;
+        gap: 24px;
+        width: 512px;
+
+        @include tablet {
+            max-width: 512px;
+            width: auto;
+        }
+
+        &-names {
+            @include flex-row-space-between;
+            gap: 32px;
+
+            @include small-tablet {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            &-right,
+            &-left {
+                @include flex-column-space-between;
+                gap: 6px;
+                max-width: 240px;
+                max-height: 70px;
+
+                @include small-tablet {
+                    max-width: none;
+                }
+            }
+
+            &-right--title,
+            &-left--title {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--neutral-color-100);
+            }
+
+            &-right--input,
+            &-left--input {
+                border: 1px solid var(--neutral-color-30);
+                border-radius: 8px;
+                padding: 10px 14px;
+                max-width: 240px;
+                max-height: 44px;
+
+                @include small-tablet {
+                    max-width: none;
+                }
+
+                @include mobile {
+                    padding: 5px 7px;
+                }
+
+                &::placeholder {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 171%;
+                    color: var(--neutral-color-150);
+                }
+            }
+        }
+
+        &-email {
+            @include flex-column-space-between;
+            gap: 6px;
+            width: 100%;
+
+            &--title {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--neutral-color-100);
+            }
+
+            &--input {
+                border: 1px solid var(--neutral-color-30);
+                border-radius: 8px;
+                padding: 10px 14px;
+                max-height: 44px;
+                max-width: 512px;
+                width: 100%;
+
+                @include mobile {
+                    padding: 5px 7px;
+                }
+
+                &::placeholder {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 171%;
+                    color: var(--neutral-color-150);
+                }
+            }
+        }
+
+        &-phone {
+            @include flex-column-space-between;
+            gap: 6px;
+            width: 100%;
+
+            &--title {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--neutral-color-100);
+            }
+
+            &-shell {
+                @include flex-row-space-between;
+                border: 1px solid var(--neutral-color-30);
+                border-radius: 8px;
+                width: 100%;
+
+                &--select {
+                    border: 1px solid var(--neutral-color-30);
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 171%;
+                    color: var(--neutral-color-100);
+                }
+
+                &--input {
+                    padding: 10px 14px 10px 0px;
+                    max-width: 446px;
+                    max-height: 44px;
+                    width: 100%;
+
+                    @include mobile {
+                        padding: 5px 7px;
+                    }
+
+                    &::placeholder {
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 171%;
+                        color: var(--neutral-color-150);
+                    }
+                }
+            }
+        }
+
+        &-massage {
+            @include flex-column-space-between;
+            gap: 6px;
+            width: 100%;
+
+            &--title {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--neutral-color-100);
+
+            }
+
+            &--input {
+                border: 1px solid var(--neutral-color-30);
+                border-radius: 8px;
+                padding: 10px 14px;
+                max-height: 44px;
+                max-width: 512px;
+                width: 100%;
+                max-height: 134px;
+                height: 20vh;
+                display: flex;
+
+                @include mobile {
+                    padding: 5px 7px;
+                }
+
+            }
+        }
+    }
+
+    &__button {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--neutral-color-10);
+        border-radius: 100px;
+        padding: 16px 32px;
+        max-width: 167px;
+        max-height: 56px;
+        background: var(--neutral-color-100);
+
+        @include mobile {
+            line-height: 130%;
+            padding: 8px 16px;
+        }
+    }
+}

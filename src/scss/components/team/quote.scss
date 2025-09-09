@@ -1,0 +1,84 @@
+.quote {
+    padding: 80px 0 80px 0;
+    border-top: solid 1px var(--neutral-color-40);
+    border-bottom: solid 1px var(--neutral-color-40);
+    margin-bottom: 160px;
+
+    @include tablet {
+        margin-bottom: 120px;
+    }
+
+    @include mobile {
+        margin-bottom: 80px;
+    }
+
+    @include small-mobile {
+        margin-bottom: 60px;
+    }
+
+    &__shell {
+        @include flex-row-space-between;
+        align-items: center;
+        width: 100%;
+
+        @include tablet {
+            flex-direction: column;
+            gap: 44px;
+        }
+    }
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+        max-width: 480px;
+
+        @include big-tablet {
+            font-size: 48px;
+            max-width: 440px;
+        }
+
+        @include tablet {
+            text-align: center;
+            max-width: 650px;
+        }
+
+        @include mobile {
+            font-size: 36px;
+        }
+
+        @include small-mobile {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+        max-width: 522px;
+
+        @include big-tablet {
+            font-size: 22px;
+            max-width: 452px;
+        }
+
+        @include tablet {
+            text-align: center;
+            max-width: 722px;
+        }
+
+        @include mobile {
+            font-size: 18px;
+        }
+
+        @include small-mobile {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import './mixins';
+@import './base';
+@import './globals';
+// components
+@import './components/header.scss';
+@import './components/team/cover.scss';
+@import './components/team/quote.scss';
+@import './components/team/our-team.scss';
+@import './components/footer.scss';
+// аналогично остальные страницы
