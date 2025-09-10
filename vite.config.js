@@ -5,7 +5,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
     root: './src',
-    base: '/COCAIN/',
+    base: '/coca/',
     server: {
         port: 3000,
     },
